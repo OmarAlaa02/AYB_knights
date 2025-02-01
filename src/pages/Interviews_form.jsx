@@ -4,6 +4,7 @@ import supabase  from "../utils/supabase";
 import { toast } from 'react-hot-toast';
 
 import styles from '/public/styles/interview_form.module.css'
+import Header from "../UI/Header";
 
 function Interviews_form(){
     const {register,handleSubmit,formState:{errors},reset}=useForm();
@@ -30,6 +31,7 @@ function Interviews_form(){
 
     return (
     <div>
+      <Header />
         <h1>Register form</h1>
 
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>

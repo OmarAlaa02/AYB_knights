@@ -4,20 +4,21 @@ import { useEffect } from "react";
 
 function ProtectedRoute({ children }) {
   
-  const { user } = useAuth();
+  // const { user } = useAuth();
   const navigate = useNavigate();
+  const user=localStorage.getItem("sb-uhltlhetnaftyqohudod-auth-token")
 
   useEffect(
     function () {
-      console.log("user in protected route", user);
+      
       if (!user) {
         navigate("/");
       }
     },
-    [user, navigate]
+    [navigate]
   );
 
-  return user ? children : null;
+  return user? children :null;
 }
 
 export default ProtectedRoute;

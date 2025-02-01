@@ -20,30 +20,35 @@ function App() {
           <Route
             path="/home"
             element={
-              // <ProtectedRoute>
+              <ProtectedRoute>
                 <Home />
-              // </ProtectedRoute>
+             </ProtectedRoute>
             }
           />
           <Route
             path="cases"
             element={
-              // <ProtectedRoute>
+              <ProtectedRoute>
                 <Cases />
-              // </ProtectedRoute>
+              </ProtectedRoute>
             }
           />
           <Route
             path="form/:streetName"
             element={
-              // <ProtectedRoute>
+              <ProtectedRoute>
               <Form />
-              // </ProtectedRoute>
+              </ProtectedRoute>
             }
           />
-          <Route path="interviews" element={<Interviews />} />
-          <Route path="interviews_done" element={<Interviews_done />} />
+
+          <Route path="interviews" element= {<ProtectedRoute><Interviews /></ProtectedRoute>}/>
+          
+          
+          <Route path="interviews_done" element={<ProtectedRoute><Interviews_done /></ProtectedRoute>} />
           <Route path="interviews_form" element={<Interviews_form />} />
+          <Route path="*" element={<h1>page not found</h1>}/>
+
         </Routes>
       </BrowserRouter>
       <Toaster />

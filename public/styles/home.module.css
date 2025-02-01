@@ -13,24 +13,25 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #b30000;
+  background-color: #7a0000; /* Darker red */
   color: #fff;
   padding: 1em 2em;
   display: flex;
-  justify-content: space-between; /* Space out the logo and the button */
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #333;
 }
 
 .link_like_h1 {
-  color: red; /* Match h1 color */
-  font-size: 2em; /* Match h1 font size */
-  font-weight: bold; /* Match h1 font weight */
-  text-align: center; /* Match h1 text alignment */
-  text-decoration: none; /* Remove underline */
-  display: block; /* Make it a block element to center it */
-  margin: 0; /* Match h1 margin */
-  padding: 0; /* Match h1 padding */
+  color: #000000; /* Darker red */
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -48,50 +49,75 @@ header {
 
 /* Nav Styling */
 .nav_right {
-  text-align: right; /* Align the 'Cases' button to the right */
+  text-align: right;
 }
 
 /* Button Styling */
 .cases_button {
   display: inline-block;
-  padding: 0.21em 1.2em;
-  /* background: linear-gradient(
-    135deg,
-    #64b5f6,
-    #81c784
-  ); Gradient Background */
-  /* background: black; */
-  border-style: solid;
-  margin: 3px;
-  border: black;
-  border: 2px;
-  color: black;
+  padding: 0.5em 1.5em;
+  border: 2px solid #000;
+  color: #fff;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  border-radius: 30px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
   text-align: center;
+  background-color: #000;
+  letter-spacing: 1px;
 }
 
 /* Hover Effect */
 .cases_button:hover {
-  transform: translateY(-5px); /* Lift the button */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-  /* background: linear-gradient(
-    135deg,
-    #2196f3,
-    #66bb6a
-  ); Lighter gradient on hover */
-  background: #b30000;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Focus Effect (for accessibility) */
+/* Focus Effect */
 .cases_button:focus {
   outline: none;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.5); /* Blue focus ring */
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.5);
+  background-color: #333;
+}
+
+/* Second Button Styling */
+.second_button {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: 2px solid #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  background-color: #000;
+  letter-spacing: 1px;
+}
+
+/* Hover Effect for Second Button */
+.second_button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Focus Effect for Second Button */
+.second_button:focus {
+  outline: none;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.5);
+  background-color: #333;
 }
 
 /* Cards Container */
@@ -165,17 +191,13 @@ h2 {
   font-size: 2.5em;
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(
-    135deg,
-    #64b5f6,
-    #81c784
-  ); /* Gradient effect for the text */
-  -webkit-background-clip: text; /* Clip the gradient to the text */
-  background-clip: text; /* Ensure the gradient is applied only to the text */
+  background: linear-gradient(135deg, #64b5f6, #81c784);
+  -webkit-background-clip: text;
+  background-clip: text;
   padding: 0.5em 0;
-  margin-top: 0.5em; /* Reduced the margin for a smaller space */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for the text */
-  animation: fadeIn 1.5s ease-out; /* Add fade-in animation */
+  margin-top: 0.5em;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease-out;
 }
 
 /* Animation for Fade-in Effect */

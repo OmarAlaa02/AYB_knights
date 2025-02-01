@@ -14,7 +14,7 @@
 
 /* Modal content container */
 .modal_content {
-    background-color: black;
+    background-color: #121212; /* Dark background */
     padding: 20px;
     border-radius: 8px;
     width: 400px;
@@ -32,7 +32,7 @@
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    background-color: red;
+    background-color: #7a0000; /* Darker red */
     color: white;
     border-radius: 50%;
     width: 30px;
@@ -44,7 +44,7 @@
 }
 
 .close_btn:hover {
-    background-color: #e04343; /* Slightly darker red on hover */
+    background-color: #550000; /* Darker red on hover */
 }
 
 /* Textarea styling */
@@ -52,7 +52,7 @@ textarea {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #7a0000; /* Darker red border */
     font-size: 1em;
     margin-bottom: 10px;
     background-color: #333; /* Dark background for textarea */
@@ -62,14 +62,14 @@ textarea {
 
 textarea:focus {
     outline: none;
-    border-color: #ff4d4d; /* Red border on focus */
+    border-color: white; /* White border on focus */
     box-shadow: 0 0 5px rgba(255, 77, 77, 0.5); /* Red glow on focus */
 }
 
 /* Submit button styling */
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: red;
+    background-color: #7a0000; /* Darker red */
     color: white;
     border: none;
     border-radius: 6px;
@@ -80,5 +80,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: pink; /* Pink background on hover */
+    background-color: #550000; /* Darker red on hover */
 }

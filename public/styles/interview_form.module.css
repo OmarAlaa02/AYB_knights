@@ -1,13 +1,13 @@
 /* General body styling */
 body {
-  background-color: black;
-  color: white;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
   font-family: Arial, sans-serif;
 }
 
 /* Heading styling */
 h1 {
-  color: red;
+  
   text-align: center;
 }
 
@@ -16,9 +16,9 @@ h1 {
   max-width: 800px; /* Increased from 500px to 800px */
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid red;
+  border: 1px solid #7a0000; /* Darker red border */
   border-radius: 10px;
-  background-color: #333;
+  background-color: #333; /* Dark background */
 }
 
 /* Styling for each form field container */
@@ -30,7 +30,7 @@ h1 {
 .form label {
   display: block;
   margin-bottom: 5px;
-  color: red;
+  /* Darker red */
   font-weight: bold;
 }
 
@@ -39,9 +39,9 @@ h1 {
 .form input[type="email"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid #7a0000; /* Darker red border */
   border-radius: 5px;
-  background-color: #444;
+  background-color: #444; /* Dark background */
   color: white;
   font-size: 1em;
   transition: border-color 0.3s ease;
@@ -60,7 +60,7 @@ h1 {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: red;
+  background-color: #7a0000; /* Darker red */
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -69,12 +69,12 @@ h1 {
 
 /* Button hover effect */
 .form button:hover {
-  background-color: darkred;
+  background-color: #550000; /* Darker red hover */
 }
 
 /* Error message or additional text styling */
 .form p {
-  color: red;
+  color: #7a0000; /* Darker red */
   font-size: 14px;
   margin-top: 10px;
   text-align: center;
