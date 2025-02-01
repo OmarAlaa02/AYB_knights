@@ -1,0 +1,81 @@
+/* General body styling */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styling */
+h1 {
+  color: red;
+  text-align: center;
+}
+
+/* Form container styling */
+.form {
+  max-width: 800px; /* Increased from 500px to 800px */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+/* Styling for each form field container */
+.form div {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Input field styling */
+.form input[type="text"],
+.form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+/* Input field focus effect */
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+  outline: none;
+  border-color: white;
+}
+
+/* Button styling */
+.form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.form button:hover {
+  background-color: darkred;
+}
+
+/* Error message or additional text styling */
+.form p {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}

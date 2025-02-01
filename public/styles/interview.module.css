@@ -1,0 +1,135 @@
+/* Header container styling */
+.header {
+    display: flex; /* Enables Flexbox for horizontal layout */
+    flex-direction: row; /* Ensures items are aligned in a row (default for Flexbox) */
+    justify-content: space-between; /* Spaces items evenly between the edges */
+    align-items: center; /* Vertically aligns items */
+    background-color: black; /* Black background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  /* Header title styling */
+  .header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: #e04343; /* Red color for the title */
+  }
+  
+  /* Button styling */
+  .header button {
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 2rem;
+  }
+  
+  /* Button hover effect */
+  .header button:hover {
+    background-color: #e04343; /* Slightly darker red */
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: row; /* Switches to vertical layout for smaller screens */
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .header h1 {
+      font-size: 1.8em;
+    }
+  
+    .header button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Container for each interview card */
+  .interviews_card {
+    background-color: black; /* Black background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 16px;
+    margin: 16px 0; /* Space between cards */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between elements in the card */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover effect for cards */
+  .interviews_card:hover {
+    transform: translateY(-4px); /* Lift the card slightly */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  }
+  
+  /* Text styling inside the card */
+  .interviews_card p {
+    margin: 0;
+    font-size: 1rem;
+    color: white; /* White text for better contrast */
+  }
+  
+  /* Button styles */
+  .interviews_card button {
+    background-color: red; /* Red background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Reject button styling */
+  .interviews_card button:nth-child(2) {
+    background-color: #ff4d4d; /* Red background for reject button */
+  }
+  
+  /* Button hover effects */
+  .interviews_card button:hover {
+    background-color: #ff4d4d; /* Darker red on hover for accept/start */
+  }
+  
+  .interviews_card button:nth-child(2):hover {
+    background-color: #e04343; /* Darker red on hover for reject */
+  }
+  
+  /* Feedback text styling */
+  .interviews_card p:last-child {
+    font-weight: bold;
+    color: #555; /* Medium gray for feedback text */
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .interviews_card {
+      padding: 12px;
+    }
+  
+    .interviews_card p {
+      font-size: 0.9rem;
+    }
+  
+    .interviews_card button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  }

@@ -1,0 +1,99 @@
+/* General styles */
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* background-color:black; */
+  }
+  
+  /* Center the login container */
+  .login_container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Form title */
+  .login_container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input group */
+  .input_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Labels */
+  .input_group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .input_group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Input focus effect */
+  .input_group input:focus {
+    outline: none;
+    border-color: red;
+  }
+  
+  /* Submit button */
+  .submit_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Button hover effect */
+  .submit_btn:hover {
+    background-color: rgb(219, 38, 38);
+  }
+  
+  /* Disabled button */
+  .submit_btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Error message */
+  .error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .login_container {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
