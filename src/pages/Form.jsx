@@ -12,8 +12,8 @@ import Header from "../UI/Header";
 
 
 function Form() {
-  const { streetName } = useParams();
-  const { user } = useAuth();
+  const { streetName } = useParams(); 
+  const { user: userEmail } = useAuth();
   const { register, handleSubmit, reset, unregister } = useForm();
   const [debtNumber, setDebtNumber] = useState(0);
   const navigate = useNavigate();
@@ -48,7 +48,7 @@ function Form() {
     //street
     formData.street = streetName;
     //by
-    formData.by = user?.email;
+    formData.by = userEmail;
 
     let caseId = -1;
     try {

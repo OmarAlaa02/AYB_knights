@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast'; // Import toast function
 // import './login.css';
+import Header from "../UI/Header";
 
 import styles from '/public/styles/login.module.css'
 
@@ -34,6 +35,8 @@ function Login() {
     };
 
     return (
+        <div>
+        <Header/>
         <div className={styles.login_container}>
         <h1>Login</h1>
         <form onSubmit={handleLogin}>
@@ -62,6 +65,7 @@ function Login() {
         {error && <p className={styles.error_message}>{error}</p>}
         
       </div>
+    </div>
       );
 }  
 export default Login;

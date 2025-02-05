@@ -23,14 +23,7 @@ function useAuth() {
     },
     [setUser]
   );
-
-  useEffect(
-    function () {
-      console.log("updated user state", user);
-    },
-    [user]
-  );
-
+  
   return { user };
 }
 
