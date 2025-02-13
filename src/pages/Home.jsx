@@ -31,22 +31,6 @@ const streets = [
 ];
 
 function Home() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      alert("DO NOT REFRESH PLEASE !");
-      event.preventDefault();
-      navigate("/");
-      event.returnValue = ""; // Required for Chrome
-      return "skdlasdmsdsad";
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
   return (
     <>
       <Header caller="home" />
