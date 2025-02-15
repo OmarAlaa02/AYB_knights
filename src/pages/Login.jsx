@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast'; // Import toast function
 // import './login.css';
 import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 
 import styles from '/public/styles/login.module.css'
 
@@ -65,6 +67,8 @@ function Login() {
         {error && <p className={styles.error_message}>{error}</p>}
         
       </div>
+      <Footer />  
+
     </div>
       );
 }  

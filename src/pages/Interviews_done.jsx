@@ -3,6 +3,8 @@ import InterviewsCard from "../UI/InterviewsCard";
 import supabase from "../utils/supabase";
 import { useEffect, useState } from "react";
 import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 
 function Interviews_done() {
   const [interviews, setInterviews] = useState([]);
@@ -30,6 +32,8 @@ function Interviews_done() {
           <InterviewsCard interviewsObj={interviews}  key={interviews.id} />
         ))}
       </div>
+      <Footer />  
+
     </>
   );
 }

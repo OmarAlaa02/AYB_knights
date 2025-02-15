@@ -3,6 +3,8 @@ import supabase from "../utils/supabase";
 // import './cases.css'
 import styles from "/public/styles/cases.module.css";
 import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 function Cases() {
   const [cases, setCases] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -133,6 +135,8 @@ function Cases() {
           ))
         )}
       </div>
+      <Footer />  
+
     </>
   );
 }

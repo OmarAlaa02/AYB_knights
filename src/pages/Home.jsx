@@ -1,6 +1,7 @@
 import HomeCard from "../UI/HomeCard";
 import Header from "../UI/Header";
 import styles from '/public/styles/home.module.css';
+import Footer from "../UI/Footer";
 
 
 const streets = [
@@ -25,7 +26,8 @@ function Home() {
         {streets.map(({streetName,color,imgurl},index) => (
           <HomeCard streetName={streetName} color={color} key={index} imgurl={imgurl} />
         ))}
-      </section>    
+      </section>  
+      <Footer />  
     </>
   );
 }

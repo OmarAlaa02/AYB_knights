@@ -9,6 +9,8 @@ import useAuth from "../auth/useAuth";
 
 import styles from '/public/styles/form.module.css'
 import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 
 
 function Form() {
@@ -278,6 +280,8 @@ function Form() {
           </form>
         </div>
       </div>
+      <Footer />  
+
     </>
   );
 }

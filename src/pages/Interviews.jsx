@@ -5,6 +5,8 @@ import styles from "/public/styles/interview.module.css";
 
 import { useEffect, useState } from "react";
 import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 
 function Interviews() {
   const [interviews, setInterviews] = useState([]);
@@ -42,6 +44,8 @@ function Interviews() {
           ))
         )}
       </div>
+      <Footer />  
+
     </>
   );
 }

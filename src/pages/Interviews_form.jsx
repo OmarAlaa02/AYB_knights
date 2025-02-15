@@ -5,6 +5,8 @@ import { toast } from 'react-hot-toast';
 
 import styles from '/public/styles/interview_form.module.css'
 import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 
 function Interviews_form(){
     const {register,handleSubmit,formState:{errors},reset}=useForm();
@@ -70,6 +72,8 @@ function Interviews_form(){
             <button type="submit">Submit</button>
 
         </form>
+      <Footer />  
+
     </div>
     );
 }
